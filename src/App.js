@@ -9,8 +9,7 @@ function App() {
   return (
       <BrowserRouter>
           <Header/>
-          <Route path='/comments' render={() => <CommentsContainer/>}/>
-          {/*<Redirect from='/' to='/comments'/>*/}
+          <Route path='/' render={() => <CommentsContainer/>}/>
       </BrowserRouter>
   );
 }
