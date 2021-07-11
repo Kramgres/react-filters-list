@@ -1,8 +1,39 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto/Roboto-Bold.eot');
+  src: local('Roboto Bold'),
+  url('./fonts/Roboto/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+  url('./fonts/Roboto/Roboto-Bold.woff') format('woff'),
+  url('./fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto/Roboto-Regular.eot');
+  src: local('Roboto'),
+  url('./fonts/Roboto/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+  url('./fonts/Roboto/Roboto-Regular.woff') format('woff'),
+  url('./fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RoadRadio';
+  src: url('./fonts/RoadRadio/RoadRadio-Bold.eot');
+  src: local('RoadRadio-Bold'),
+  url('./fonts/RoadRadio/RoadRadio-Bold.eot?#iefix') format('embedded-opentype'),
+  url('./fonts/RoadRadio/RoadRadio-Bold.woff') format('woff'),
+  url('./fonts/RoadRadio/RoadRadio-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

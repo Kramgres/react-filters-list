@@ -1,0 +1,158 @@
+$color-primary: #2753F0;
+$color-white: #FFFFFF;
+$color-black: #000000;
+$color-gray-darken: #292929;
+$color-gray-dark: #959595;
+$color-gray-light: #999999;
+$color-gray-lighten: #CACACA;
+$color-gray-lightest: #E5E5E5;;
+$font-family-roadRadio: 'RoadRadio', sans-serif;
+
+input{
+  outline: none;
+}
+
+.container{
+  max-width: 1270px;
+  margin: 0 auto;
+}
+
+.header{
+  &__logo{
+    display: flex;
+    justify-content: center;
+    font-family: $font-family-roadRadio;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 64px;
+    padding-top: 49px;
+    padding-bottom: 17px;
+  }
+}
+
+.top-filters{
+  background-color: $color-primary;
+  padding: 24px 0;
+  &__wrapper{
+    display: flex;
+    align-items: center;
+  }
+
+  &__search{
+    margin-right: 65px;
+  }
+}
+
+.search{
+  &__label{
+    font-size: 18px;
+    line-height: 21px;
+    color: $color-white;
+    margin-right: 13px;
+  }
+
+  &__input{
+    font-size: 16px;
+    line-height: 19px;
+    color: $color-black;
+    border: 1px solid #CACACA;
+    border-radius: 3px;
+    padding: 11px 15px 12px;
+
+    &::placeholder{
+      color: $color-gray-light;
+    }
+  }
+}
+
+.filter{
+  display: flex;
+  align-items: center;
+
+  &__name{
+    font-size: 18px;
+    line-height: 21px;
+    color: $color-white;
+    margin-right: 29px;
+  }
+
+  &__variant{
+    font-size: 18px;
+    line-height: 21px;
+    color: $color-white;
+    padding: 10px 18px 11px;
+    border-radius: 3px;
+    background: $color-gray-darken;
+    margin-right: 16px;
+    border: none;
+    cursor: pointer;
+
+    &:last-child{
+      margin-right: 0;
+    }
+
+    &_active{
+      background: $color-white;
+      color: $color-black;
+    }
+  }
+}
+
+.comments{
+ &-list{
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
+
+   &-wrapper{
+     background: $color-gray-lightest;
+     padding-top: 24px;
+   }
+
+   &__comment{
+     margin-bottom: 24px;
+
+     &:last-child{
+       margin-bottom: 0;
+     }
+   }
+ }
+}
+
+.comment{
+  display: flex;
+  flex-direction: column;
+  padding: 28px;
+  background: $color-white;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+
+  &__name{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: $color-black;
+    margin-bottom: 4px;
+  }
+
+  &__email{
+    font-size: 14px;
+    line-height: 16px;
+    color: $color-gray-dark;
+    margin-bottom: 8px;
+  }
+
+  &__body{
+    font-size: 16px;
+    line-height: 19px;
+    color: $color-black;
+  }
+}
+
+.preloader{
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: $color-black;
+  padding: 24px 0;
+}

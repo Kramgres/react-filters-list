@@ -1,38 +1,131 @@
-.App {
-  text-align: center;
+input {
+  outline: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  max-width: 1270px;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header__logo {
+  display: flex;
+  justify-content: center;
+  font-family: "RoadRadio", sans-serif;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 64px;
+  padding-top: 49px;
+  padding-bottom: 17px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.top-filters {
+  background-color: #2753F0;
+  padding: 24px 0;
+}
+.top-filters__wrapper {
+  display: flex;
+  align-items: center;
+}
+.top-filters__search {
+  margin-right: 65px;
+}
+
+.search__label {
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  margin-right: 13px;
+}
+.search__input {
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  border: 1px solid #CACACA;
+  border-radius: 3px;
+  padding: 11px 15px 12px;
+}
+.search__input::placeholder {
+  color: #999999;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+}
+.filter__name {
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  margin-right: 29px;
+}
+.filter__variant {
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  padding: 10px 18px 11px;
+  border-radius: 3px;
+  background: #292929;
+  margin-right: 16px;
+  border: none;
+  cursor: pointer;
+}
+.filter__variant:last-child {
+  margin-right: 0;
+}
+.filter__variant_active {
+  background: #FFFFFF;
+  color: #000000;
+}
+
+.comments-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.comments-list-wrapper {
+  background: #E5E5E5;
+  padding-top: 24px;
+}
+.comments-list__comment {
+  margin-bottom: 24px;
+}
+.comments-list__comment:last-child {
+  margin-bottom: 0;
+}
+
+.comment {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 28px;
+  background: #FFFFFF;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+}
+.comment__name {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  margin-bottom: 4px;
+}
+.comment__email {
+  font-size: 14px;
+  line-height: 16px;
+  color: #959595;
+  margin-bottom: 8px;
+}
+.comment__body {
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
 }
 
-.App-link {
-  color: #61dafb;
+.preloader {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  padding: 24px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/*# sourceMappingURL=App.css.map */
